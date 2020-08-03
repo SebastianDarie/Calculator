@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=McLaren&display=swap');
+
+*, *:hover, * ::after {
+    box-sizing: border-box;
+    font-family: 'McLaren', cursive;
+}
