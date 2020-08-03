@@ -40,22 +40,22 @@ class Calculator {
 
         switch (this.operation) {
             case '+':
-                calculation = prev + curr
+                calculation = Math.round(100 * (prev + curr)) / 100
                 break
             case '-':
-                calculation = prev - curr
+                calculation = Math.round(100 * (prev - curr)) / 100
                 break
             case '*':
-                calculation = prev * curr
+                calculation = Math.round(100 * (prev * curr)) / 100
                 break
             case '÷': 
-                calculation = prev / curr
+                calculation = Math.round(100 * (prev / curr)) / 100
                 break
             case '%':
-                calculation = prev % curr
+                calculation = Math.round(100 * (prev % curr)) / 100
                 break
             case '**':
-                calculation = Math.pow(prev, curr)
+                calculation = Math.round(10 * Math.pow(prev, curr)) / 10
                 break
             default:
                 return
